@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     //seekBar.getProgress() - Получить значения из seekBar-а
                     numbers.add(seekBar.getProgress() * ii);
                 }
-                // Обновить данные в ListView
+                // Обновить данные в ListView. т.к. arrayAdapter изначально пустой( "numbers = new ArrayList<>()" ), ему нужно явно указать что массив изменился
                 arrayAdapter.notifyDataSetChanged();
             }
 
